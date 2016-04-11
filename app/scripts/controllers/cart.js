@@ -16,21 +16,6 @@ angular.module('sapientApp')
     askForPromise.then(
       // OnSuccess function
       function(answer) {
-
-        $scope.cart = {
-          items: []
-        };
-        $scope.items = [];
-        $scope.obj = {
-          qty: 1
-        };
-        console.log(answer.data.productsInCart.length);
-        angular.forEach(answer.data.productsInCart, function(item) {
-            //debugger;
-            $scope.items.push[$scope.obj];
-            //total += item.qty * item.p_price;
-            console.log($scope.items);
-          })
           //console.log($scope.items);
         $scope.somethingRight = answer;
         $scope.cartData = answer.data.productsInCart;
@@ -53,10 +38,4 @@ angular.module('sapientApp')
         $scope.error = true;
       }
     );
-
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   }]);
