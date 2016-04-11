@@ -16,7 +16,8 @@ angular.module('sapientApp')
     askForPromise.then(
         // OnSuccess function
         function(answer) {
-          debugger;
+          //debugger;
+          $scope.total = "$19";
           console.log(answer);
           $scope.somethingRight = answer;
           $scope.cartData = answer.data.productsInCart;
