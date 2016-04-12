@@ -17,6 +17,14 @@ angular.module('sapientApp')
         $scope.somethingRight = answer;
         $scope.cartData = answer.data.productsInCart;
         $scope.success = true;
+        $scope.setModalData = function (index){
+          $scope.modalData = $scope.cartData[index];
+          $scope.appindex=index;
+          console.log($scope.modalData);
+          //
+          // $scope.modalAvailableOption=$scope.cartData[index]
+        }
+
         $scope.total = function() {
           var total = 0;
           angular.forEach(answer.data.productsInCart, function(item) {
