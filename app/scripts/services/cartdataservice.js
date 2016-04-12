@@ -27,9 +27,7 @@ angular.module('sapientApp')
               deferObject.reject(reason);
               // This code will only run if we have a failed promise.
             });
-
             return deferObject.promise;
-
         }
       };
     return cartdata;
