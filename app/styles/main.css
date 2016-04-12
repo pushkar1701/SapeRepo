@@ -59,6 +59,10 @@ body {
   margin-top: 28px;
 }
 
+#logo {
+  width: 100% !important;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 968px) {
   .container {
@@ -83,7 +87,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .img-responsive {
+  .img-responsive .cusImage {
     max-width: 60% !important;
   }
 
