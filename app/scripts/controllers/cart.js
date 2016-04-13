@@ -10,6 +10,11 @@
 angular.module('sapientApp')
   .controller('CartCtrl', ['$scope', 'CartDataService', function($scope, CartDataService) {
     $scope.qty = [];
+    $scope.selSize = 's';
+    $scope.SelectSize = function(code) {
+      $scope.selSize = code;
+
+    };
     var askForPromise = CartDataService.getPromise();
     askForPromise.then(
       // OnSuccess function

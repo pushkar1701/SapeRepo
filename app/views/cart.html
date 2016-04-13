@@ -46,11 +46,13 @@
 
                       <div class="dropdown">
                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                          Size
+                          {{selSize}}
                           <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownsizemenu" >
-                          <li ng-repeat="size in modalData.p_available_options.sizes"><a>{{size.code}}</a></li>
+                          <li ng-repeat="size in modalData.p_available_options.sizes" >
+                            <a ng-click="SelectSize(size.code)">{{size.code}}</a>
+                          </li>
                         </ul>
                       </div>
                   <h3>  Available Colors: <div ng-repeat="colors in modalData.p_available_options.colors" class="colorbox" style="background-color: {{colors.hexcode}};"> </div> </h3>
@@ -66,32 +68,8 @@
         </div>
       </div>
     </tr>
-
-
-
   </tbody>
   <tfoot>
-    <!-- <tr>
-      <td ><strong>Need Help</strong>
-        <br><strong> or Have questions <span class="glyphicon glyphicon-question-sign"></td>
-          <td class="text-center"></td>
-          <td >Enter Promotion Code<br> or Gift Card</td>
-      <td><div><input type="text" class="form-control"><button type="button" class="btn btn-default" style="float: right">Apply</button></div></td>
-    </tr>
-    <tr>
-      <td class="hidden-xs"><strong>Need Help</strong>
-        <br><strong> or Have questions <span class="glyphicon glyphicon-question-sign"></td>
-          <td class="text-center"></td>
-          <td class="text-center"><strong>Estimated Shipping</strong></td>
-      <td class="text-center"><strong>Free</strong></td>
-    </tr>
-    <tr>
-      <td class="hidden-xs"><strong>Need Help</strong>
-        <br><strong> or Have questions <span class="glyphicon glyphicon-question-sign"></td>
-          <td class="text-center"></td>
-          <td class="text-center"><strong>Estimated Shipping</strong></td>
-      <td class="text-center"><strong>Free</strong></td>
-    </tr> -->
     <tr>
       <td ><strong>Need Help</strong>
         <br><strong> or Have questions <span class="glyphicon glyphicon-question-sign"></td>
