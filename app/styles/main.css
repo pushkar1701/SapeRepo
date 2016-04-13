@@ -72,7 +72,7 @@ body {
   height: 300px !important;
 }
 
-tr {
+#prodId {
   cursor: pointer;
 }
 .colorbox {
