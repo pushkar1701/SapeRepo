@@ -45,6 +45,7 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background-color : #FFF !important;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -62,6 +63,24 @@ body {
 #logo {
   width: 100% !important;
 }
+
+.modal-dialog {
+  padding-top: 10%;
+}
+
+.imgModal {
+  height: 300px !important;
+}
+
+tr {
+  cursor: pointer;
+}
+.colorbox {
+width: 20px;
+display: inline-block;
+height: 20px;
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 968px) {
@@ -93,6 +112,15 @@ body {
 
   #logo {
     max-width: 100% !important;
+  }
+
+  .modal-dialog {
+    padding-top: 20%;
+  }
+
+  .imgModal {
+    height: 195px !important;
+    margin-top: 20%;
   }
 
 }
